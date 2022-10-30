@@ -1,9 +1,11 @@
 // src/App.tsx
 import React from 'react';
+import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components/native';
+import Theme from './Theme';
 
 interface IContainerProps {
-  background: string;
+  theme?: ITheme;
 }
 
 const Container = styled.View`
@@ -11,7 +13,7 @@ const Container = styled.View`
   justify-content: center;
   align-items: center;
   background-color: ${(props: IContainerProps) =>
-    props.background ? props.background : 'white'};
+    props.theme && props.theme.color.black};
 `;
 const MainText = styled.Text`
   font-size: 20px;
@@ -25,9 +27,11 @@ interface State {}
 export default class App extends React.Component<Props, State> {
   render() {
     return (
-      <Container background="powderblue">
-        <MainText>Hello world</MainText>
-      </Container>
+      <ThemeProvider theme={Theme}>
+        <Container>
+          <MainText>Hello world</MainText>
+        </Container>
+      </ThemeProvider>
     );
   }
 }

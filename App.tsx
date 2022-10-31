@@ -16,7 +16,8 @@ const Container = styled.View`
     props.theme && props.theme.color.black};
 `;
 const MainText = styled.Text`
-  font-size: 20px;
+  font-size: ${(props: IContainerProps) =>
+    props.theme && props.theme.fonts.normal};
   text-align: center;
   margin: 10px;
   color: red;

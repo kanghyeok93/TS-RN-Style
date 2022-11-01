@@ -20,19 +20,18 @@ const MainText = styled.Text`
     props.theme && props.theme.fonts.normal};
   text-align: center;
   margin: 10px;
-  color: red;
+  color: white;
 `;
 
 interface Props {}
-interface State {}
-export default class App extends React.Component<Props, State> {
-  render() {
-    return (
-      <ThemeProvider theme={Theme}>
-        <Container>
-          <MainText>Hello world</MainText>
-        </Container>
-      </ThemeProvider>
-    );
-  }
-}
+const App = ({}: Props) => {
+  return (
+    <ThemeProvider theme={Theme}>
+      <Container>
+        <MainText>Hello world</MainText>
+      </Container>
+    </ThemeProvider>
+  );
+};
+
+export default App;

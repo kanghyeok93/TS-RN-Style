@@ -2,19 +2,10 @@
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components/native';
+import {Container} from './src/components/styled/View';
+import {IContainerProps} from './src/interfaces/Styled.interface';
 import Theme from './Theme';
 
-interface IContainerProps {
-  theme?: ITheme;
-}
-
-const Container = styled.View`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: ${(props: IContainerProps) =>
-    props.theme && props.theme.color.black};
-`;
 const MainText = styled.Text`
   font-size: ${(props: IContainerProps) =>
     props.theme && props.theme.fonts.normal};

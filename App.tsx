@@ -3,7 +3,7 @@ import React from 'react';
 import {ThemeProvider} from 'styled-components';
 import {MainText} from './src/components/styled/Text';
 import {Container} from './src/components/styled/View';
-import Theme from './Theme';
+import Theme from './src/theme/Theme';
 
 interface Props {}
 const App = ({}: Props) => {

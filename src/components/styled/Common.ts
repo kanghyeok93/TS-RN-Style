@@ -1,7 +1,4 @@
-// Index Signature 선언
-type Color = {
-  [index: string]: string;
-};
+import {Color} from '../../types/Styled.type';
 
 export const colors: Color = {
   Danger: '#ff4444',
@@ -52,17 +49,17 @@ export const BACKGROUND_COLOR = (props: object) => {
   return colorFrame(props, 'bg', 'transparent');
 };
 
-// // border color
-// export const BORDER_COLOR = props => {
-//   return colorFrame(props, 'br', 'transparent');
-// };
+// border color
+export const BORDER_COLOR = (props: object) => {
+  return colorFrame(props, 'br', 'transparent');
+};
 
-// // font color
-// export const FONT_COLOR = props => {
-//   return colorFrame(props, 'ft', '#000000');
-// };
+// font color
+export const FONT_COLOR = (props: object) => {
+  return colorFrame(props, 'ft', '#000000');
+};
 
-// // margin
+// margin
 // export const MARGIN_TOP = props => {
 //   return props.marginTop;
 // };

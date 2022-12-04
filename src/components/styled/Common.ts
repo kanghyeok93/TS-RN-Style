@@ -1,4 +1,4 @@
-import {Color} from '../../types/Styled.type';
+import {Color, Margin, Padding} from '../../types/Styled.type';
 
 export const colors: Color = {
   Danger: '#ff4444',
@@ -60,32 +60,32 @@ export const FONT_COLOR = (props: object) => {
 };
 
 // margin
-// export const MARGIN_TOP = props => {
-//   return props.marginTop;
-// };
-// export const MARGIN_LEFT = props => {
-//   return props.marginLeft;
-// };
-// export const MARGIN_RIGHT = props => {
-//   return props.marginRight;
-// };
-// export const MARGIN_BOTTOM = props => {
-//   return props.marginBottom;
-// };
+export const MARGIN_TOP = (props: Margin) => {
+  return props.marginTop;
+};
+export const MARGIN_LEFT = (props: Margin) => {
+  return props.marginLeft;
+};
+export const MARGIN_RIGHT = (props: Margin) => {
+  return props.marginRight;
+};
+export const MARGIN_BOTTOM = (props: Margin) => {
+  return props.marginBottom;
+};
 
-// // padding
-// export const PADDING_TOP = props => {
-//   return props.paddingTop;
-// };
-// export const PADDING_LEFT = props => {
-//   return props.paddingLeft;
-// };
-// export const PADDING_RIGHT = props => {
-//   return props.paddingRight;
-// };
-// export const PADDING_BOTTOM = props => {
-//   return props.paddingBottom;
-// };
+// padding
+export const PADDING_TOP = (props: Padding) => {
+  return props.paddingTop;
+};
+export const PADDING_LEFT = (props: Padding) => {
+  return props.paddingLeft;
+};
+export const PADDING_RIGHT = (props: Padding) => {
+  return props.paddingRight;
+};
+export const PADDING_BOTTOM = (props: Padding) => {
+  return props.paddingBottom;
+};
 
 // // border width
 // export const BORDER_LEFT_WIDTH = props => {

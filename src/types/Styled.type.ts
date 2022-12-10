@@ -5,14 +5,30 @@ export type Color = {
 
 export type Margin = {
   marginTop: number;
-  marginLeft: number;
   marginRight: number;
   marginBottom: number;
+  marginLeft: number;
 };
 
 export type Padding = {
   paddingTop: number;
-  paddingLeft: number;
   paddingRight: number;
   paddingBottom: number;
+  paddingLeft: number;
+};
+
+export type BorderWidth = {
+  borderWidth: number;
+  borderTopWidth: number;
+  borderRightWidth: number;
+  borderBottomWidth: number;
+  borderLeftWidth: number;
+};
+
+export type BorderRadius = {
+  borderRadius: number;
+  borderTopLeftRadius: number;
+  borderTopRightRadius: number;
+  borderBottomLeftRadius: number;
+  borderBottomRightRadius: number;
 };

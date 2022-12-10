@@ -1,4 +1,10 @@
-import {Color, Margin, Padding} from '../../types/Styled.type';
+import {
+  BorderRadius,
+  BorderWidth,
+  Color,
+  Margin,
+  Padding,
+} from '../../types/Styled.type';
 
 export const colors: Color = {
   Danger: '#ff4444',
@@ -63,22 +69,19 @@ export const FONT_COLOR = (props: object) => {
 export const MARGIN_TOP = (props: Margin) => {
   return props.marginTop;
 };
-export const MARGIN_LEFT = (props: Margin) => {
-  return props.marginLeft;
-};
 export const MARGIN_RIGHT = (props: Margin) => {
   return props.marginRight;
 };
 export const MARGIN_BOTTOM = (props: Margin) => {
   return props.marginBottom;
 };
+export const MARGIN_LEFT = (props: Margin) => {
+  return props.marginLeft;
+};
 
 // padding
 export const PADDING_TOP = (props: Padding) => {
   return props.paddingTop;
-};
-export const PADDING_LEFT = (props: Padding) => {
-  return props.paddingLeft;
 };
 export const PADDING_RIGHT = (props: Padding) => {
   return props.paddingRight;
@@ -86,34 +89,44 @@ export const PADDING_RIGHT = (props: Padding) => {
 export const PADDING_BOTTOM = (props: Padding) => {
   return props.paddingBottom;
 };
+export const PADDING_LEFT = (props: Padding) => {
+  return props.paddingLeft;
+};
 
-// // border width
-// export const BORDER_LEFT_WIDTH = props => {
-//   return props.borderLeftWidth;
-// };
-// export const BORDER_RIGHT_WIDTH = props => {
-//   return props.borderRightWidth;
-// };
-// export const BORDER_BOTTOM_WIDTH = props => {
-//   return props.borderBottomWidth;
-// };
-// export const BORDER_TOP_WIDTH = props => {
-//   return props.borderTopWidth;
-// };
+// border width
+export const BORDER_WIDTH = (props: BorderWidth) => {
+  return props.borderWidth;
+};
+export const BORDER_TOP_WIDTH = (props: BorderWidth) => {
+  return props.borderTopWidth;
+};
+export const BORDER_RIGHT_WIDTH = (props: BorderWidth) => {
+  return props.borderRightWidth;
+};
+export const BORDER_BOTTOM_WIDTH = (props: BorderWidth) => {
+  return props.borderBottomWidth;
+};
 
-// // border radius
-// export const BORDER_TOP_LEFT_WIDTH = props => {
-//   return props.borderTopLeftRadius;
-// };
-// export const BORDER_TOP_RIGHT_WIDTH = props => {
-//   return props.borderTopRightRadius;
-// };
-// export const BORDER_BOTTOM_LEFT_WIDTH = props => {
-//   return props.borderBottomLeftRadius;
-// };
-// export const BORDER_BOTTOM_RIGHT_WIDTH = props => {
-//   return props.borderBottomRightRadius;
-// };
+export const BORDER_LEFT_WIDTH = (props: BorderWidth) => {
+  return props.borderLeftWidth;
+};
+
+// border radius
+export const BORDER_RADIUS = (props: BorderRadius) => {
+  return props.borderRadius;
+};
+export const BORDER_TOP_LEFT_RADIUS = (props: BorderRadius) => {
+  return props.borderTopLeftRadius;
+};
+export const BORDER_TOP_RIGHT_RADIUS = (props: BorderRadius) => {
+  return props.borderTopRightRadius;
+};
+export const BORDER_BOTTOM_LEFT_RADIUS = (props: BorderRadius) => {
+  return props.borderBottomLeftRadius;
+};
+export const BORDER_BOTTOM_RIGHT_RADIUS = (props: BorderRadius) => {
+  return props.borderBottomRightRadius;
+};
 
 // // font size
 // export const FONT_SIZE = props => {

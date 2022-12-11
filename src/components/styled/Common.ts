@@ -2,6 +2,8 @@ import {
   BorderRadius,
   BorderWidth,
   Color,
+  FontSize,
+  FontWeight,
   Margin,
   Padding,
 } from '../../types/Styled.type';
@@ -128,30 +130,30 @@ export const BORDER_BOTTOM_RIGHT_RADIUS = (props: BorderRadius) => {
   return props.borderBottomRightRadius;
 };
 
-// // font size
-// export const FONT_SIZE = props => {
-//   if (props.ftVerySmall) {
-//     return '8px';
-//   }
-//   if (props.ftSmall) {
-//     return '11px';
-//   }
-//   if (props.ftLarge) {
-//     return '18px';
-//   }
-//   if (props.ftBigLarge) {
-//     return '28px';
-//   }
-//   if (props.fontSize) {
-//     return props.fontSize;
-//   }
-//   return '14px';
-// };
+// font size
+export const FONT_SIZE = (props: FontSize) => {
+  if (props.ftVerySmall) {
+    return '8px';
+  }
+  if (props.ftSmall) {
+    return '11px';
+  }
+  if (props.ftLarge) {
+    return '18px';
+  }
+  if (props.ftBigLarge) {
+    return '28px';
+  }
+  if (props.fontSize) {
+    return props.fontSize;
+  }
+  return '14px';
+};
 
 // // font weight
-// export const FONT_WEIGHT = props => {
-//   if (props.bold) {
-//     return 'bold';
-//   }
-//   return 'normal';
-// };
+export const FONT_WEIGHT = (props: FontWeight) => {
+  if (props.bold) {
+    return 'bold';
+  }
+  return 'normal';
+};

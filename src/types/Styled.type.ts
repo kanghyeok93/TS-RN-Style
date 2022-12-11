@@ -32,3 +32,15 @@ export type BorderRadius = {
   borderBottomLeftRadius: number;
   borderBottomRightRadius: number;
 };
+
+export type FontSize = {
+  ftVerySmall: string;
+  ftSmall: string;
+  ftLarge: string;
+  ftBigLarge: string;
+  fontSize: string;
+};
+
+export type FontWeight = {
+  bold: string;
+};

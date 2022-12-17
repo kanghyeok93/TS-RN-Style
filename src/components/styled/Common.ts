@@ -150,7 +150,7 @@ export const FONT_SIZE = (props: FontSize) => {
   return '14px';
 };
 
-// // font weight
+// font weight
 export const FONT_WEIGHT = (props: FontWeight) => {
   if (props.bold) {
     return 'bold';

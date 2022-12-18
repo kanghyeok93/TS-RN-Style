@@ -68,6 +68,9 @@ export const FONT_COLOR = (props: object) => {
 };
 
 // margin
+export const MARGIN = (props: Margin) => {
+  return props.margin;
+};
 export const MARGIN_TOP = (props: Margin) => {
   return props.marginTop;
 };
@@ -82,6 +85,9 @@ export const MARGIN_LEFT = (props: Margin) => {
 };
 
 // padding
+export const PADDING = (props: Padding) => {
+  return props.padding;
+};
 export const PADDING_TOP = (props: Padding) => {
   return props.paddingTop;
 };

@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import {IContainerProps} from '../../interfaces/Styled.interface';
+import {Margin, Padding} from '../../types/Styled.type';
 import * as Common from './Common';
 
 export const Container = styled.View`
@@ -10,8 +11,12 @@ export const Container = styled.View`
     props.theme && props.theme.color.black};
 `;
 
+interface Props extends Margin {
+  flex: number;
+}
+
 // type 지정해주기
-export const View = styled.View(props => ({
+export const View = styled.View((props: Props) => ({
   // flex
   flex: props.flex,
   alignItems: props.alignItems || 'stretch',
@@ -25,19 +30,18 @@ export const View = styled.View(props => ({
   backgroundColor: Common.BACKGROUND_COLOR(props),
 
   // margin
-  marginLeft: Common.MARGIN_LEFT(props),
-  marginRight: Common.MARGIN_RIGHT(props),
+  margin: Common.MARGIN(props),
   marginTop: Common.MARGIN_TOP(props),
+  marginRight: Common.MARGIN_RIGHT(props),
   marginBottom: Common.MARGIN_BOTTOM(props),
+  marginLeft: Common.MARGIN_LEFT(props),
 
   // padding
-  paddingLeft: Common.PADDING_LEFT(props),
-  paddingRight: Common.PADDING_RIGHT(props),
+  padding: Common.PADDING(props),
   paddingTop: Common.PADDING_TOP(props),
+  paddingRight: Common.PADDING_RIGHT(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
-
-  margin: props.margin,
-  padding: props.padding,
+  paddingLeft: Common.PADDING_LEFT(props),
 
   // zIndex
   zIndex: props.zIndex || 1,

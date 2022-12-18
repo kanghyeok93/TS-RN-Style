@@ -4,6 +4,7 @@ export type Color = {
 };
 
 export type Margin = {
+  margin: number;
   marginTop: number;
   marginRight: number;
   marginBottom: number;
@@ -11,6 +12,7 @@ export type Margin = {
 };
 
 export type Padding = {
+  padding: number;
   paddingTop: number;
   paddingRight: number;
   paddingBottom: number;

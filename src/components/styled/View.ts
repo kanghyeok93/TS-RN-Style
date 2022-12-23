@@ -11,8 +11,13 @@ export const Container = styled.View`
     props.theme && props.theme.color.black};
 `;
 
-interface Props extends Margin {
+interface Props extends Margin, Padding {
   flex: number;
+  alignItems: string;
+  justifyContent: string;
+  width: number | string;
+  height: number | string;
+  zIndex: number;
 }
 
 // type 지정해주기

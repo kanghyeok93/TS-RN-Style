@@ -11,7 +11,7 @@ export const Container = styled.View`
     props.theme && props.theme.color.black};
 `;
 
-interface Props extends Margin, Padding {
+interface ViewType extends Margin, Padding {
   flex: number;
   alignItems: string;
   justifyContent: string;
@@ -20,8 +20,7 @@ interface Props extends Margin, Padding {
   zIndex: number;
 }
 
-// type 지정해주기
-export const View = styled.View((props: Props) => ({
+export const View = styled.View((props: ViewType) => ({
   // flex
   flex: props.flex,
   alignItems: props.alignItems || 'stretch',
@@ -50,4 +49,9 @@ export const View = styled.View((props: Props) => ({
 
   // zIndex
   zIndex: props.zIndex || 1,
+}));
+
+export const SafeAreaView = styled.SafeAreaView(props => ({
+  flex: 1,
+  backgroundColor: Common.BACKGROUND_COLOR(props),
 }));

@@ -55,3 +55,36 @@ export const SafeAreaView = styled.SafeAreaView(props => ({
   flex: 1,
   backgroundColor: Common.BACKGROUND_COLOR(props),
 }));
+
+export const ViewRow = styled(View)({
+  flexDirection: 'row',
+});
+
+export const ViewAbsolute = styled(View)(props => ({
+  position: 'absolute',
+
+  top: props.top,
+  left: props.left,
+  right: props.right,
+  bottom: props.bottom,
+}));
+
+export const ViewBorder = styled(View)(props => ({
+  borderColor: Common.BORDER_COLOR(props),
+
+  borderWidth: Common.BORDER_WIDTH(props),
+  borderTopWidth: Common.BORDER_TOP_WIDTH(props),
+  borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
+  borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+  borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
+
+  borderRadius: Common.BORDER_RADIUS(props),
+  borderTopLeftRadius: Common.BORDER_TOP_LEFT_RADIUS(props),
+  borderTopRightRadius: Common.BORDER_TOP_RIGHT_RADIUS(props),
+  borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_RADIUS(props),
+  borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_RADIUS(props),
+}));
+
+export const ViewRowBorder = styled(ViewBorder)({
+  flexDirection: 'row',
+});

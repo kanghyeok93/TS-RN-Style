@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 import {IContainerProps} from '../../interfaces/Styled.interface';
-import {Margin, Padding, FontSize, FontWeight} from '../../types/Styled.type';
+import {FontSize, FontWeight, Margin, Padding} from '../../types/Styled.type';
 import * as Common from './Common';
 
 export const MainText = styled.Text`
@@ -18,6 +18,8 @@ interface TextType extends Margin, Padding, FontSize, FontWeight {
   lineHeight: number;
   textDecoration: number;
 }
+
+type TextAlign = 'end' | 'left' | 'center' | 'right' | 'start' | undefined;
 
 export const Text = styled.Text((props: TextType) => ({
   // size
@@ -37,23 +39,21 @@ export const Text = styled.Text((props: TextType) => ({
   backgroundColor: Common.BACKGROUND_COLOR(props),
 
   // margin
-  marginLeft: Common.MARGIN_LEFT(props),
-  marginRight: Common.MARGIN_RIGHT(props),
+  margin: Common.MARGIN(props),
   marginTop: Common.MARGIN_TOP(props),
+  marginRight: Common.MARGIN_RIGHT(props),
   marginBottom: Common.MARGIN_BOTTOM(props),
+  marginLeft: Common.MARGIN_LEFT(props),
 
   // padding
-  paddingLeft: Common.PADDING_LEFT(props),
-  paddingRight: Common.PADDING_RIGHT(props),
+  padding: Common.PADDING(props),
   paddingTop: Common.PADDING_TOP(props),
+  paddingRight: Common.PADDING_RIGHT(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
+  paddingLeft: Common.PADDING_LEFT(props),
 
-  margin: props.margin,
-  padding: props.padding,
-
-  //todo 이슈 해결 중
   // align
-  textAlign: props.textAlign || 'left',
+  textAlign: (props.textAlign as TextAlign) || 'center',
 
   // text Line
   textDecoration: props.textDecoration || 'none',

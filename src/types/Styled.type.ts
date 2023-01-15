@@ -46,3 +46,11 @@ export type FontSize = {
 export type FontWeight = {
   bold: string;
 };
+
+export type TextAlign =
+  | 'end'
+  | 'left'
+  | 'center'
+  | 'right'
+  | 'start'
+  | undefined;

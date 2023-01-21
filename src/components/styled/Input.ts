@@ -3,7 +3,13 @@ import styled from 'styled-components/native';
 import {TextAlign} from '../../types/Styled.type';
 import * as Common from './Common';
 
-export const Input = styled(TextInput)(props => ({
+interface InputType {
+  width: number | string;
+  height: number | string;
+  textAlign: string;
+}
+
+export const Input = styled(TextInput)((props: InputType) => ({
   // size
   width: props.width || '100%',
   height: props.height || 39,

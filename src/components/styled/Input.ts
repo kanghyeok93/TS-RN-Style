@@ -1,9 +1,23 @@
 import {TextInput} from 'react-native';
 import styled from 'styled-components/native';
-import {TextAlign} from '../../types/Styled.type';
+import {
+  BorderRadius,
+  BorderWidth,
+  FontSize,
+  FontWeight,
+  Margin,
+  Padding,
+  TextAlign,
+} from '../../types/Styled.type';
 import * as Common from './Common';
 
-interface InputType {
+interface InputType
+  extends Margin,
+    Padding,
+    FontSize,
+    FontWeight,
+    BorderWidth,
+    BorderRadius {
   width: number | string;
   height: number | string;
   textAlign: string;
@@ -40,18 +54,18 @@ export const Input = styled(TextInput)((props: InputType) => ({
   textAlign: (props.textAlign as TextAlign) || 'center',
 }));
 
-// export const InputBorder = styled(Input)(props => ({
-//   borderColor: Common.BORDER_COLOR(props),
-//   borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
-//   borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
-//   borderTopWidth: Common.BORDER_TOP_WIDTH(props),
-//   borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+export const InputBorder = styled(Input)(props => ({
+  borderColor: Common.BORDER_COLOR(props),
 
-//   borderTopLeftRadius: Common.BORDER_TOP_LEFT_WIDTH(props),
-//   borderTopRightRadius: Common.BORDER_TOP_RIGHT_WIDTH(props),
-//   borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_WIDTH(props),
-//   borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_WIDTH(props),
+  borderWidth: Common.BORDER_WIDTH(props),
+  borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
+  borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
+  borderTopWidth: Common.BORDER_TOP_WIDTH(props),
+  borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
 
-//   borderWidth: props.borderWidth,
-//   borderRadius: props.borderRadius,
-// }));
+  borderRadius: Common.BORDER_RADIUS(props),
+  borderTopLeftRadius: Common.BORDER_TOP_LEFT_RADIUS(props),
+  borderTopRightRadius: Common.BORDER_TOP_RIGHT_RADIUS(props),
+  borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_RADIUS(props),
+  borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_RADIUS(props),
+}));

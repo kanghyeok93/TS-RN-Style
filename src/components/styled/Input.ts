@@ -11,16 +11,14 @@ import {
 } from '../../types/Styled.type';
 import * as Common from './Common';
 
-interface InputType
-  extends Margin,
-    Padding,
-    FontSize,
-    FontWeight,
-    BorderWidth,
-    BorderRadius {
+interface InputType extends Margin, Padding, FontSize, FontWeight {
   width: number | string;
   height: number | string;
-  textAlign: string;
+  textAlign: TextAlign;
+}
+
+interface InputBorderType extends BorderWidth, BorderRadius {
+  borderColor: string;
 }
 
 export const Input = styled(TextInput)((props: InputType) => ({
@@ -51,10 +49,10 @@ export const Input = styled(TextInput)((props: InputType) => ({
   paddingLeft: Common.PADDING_LEFT(props),
 
   // align
-  textAlign: (props.textAlign as TextAlign) || 'center',
+  textAlign: props.textAlign,
 }));
 
-export const InputBorder = styled(Input)(props => ({
+export const InputBorder = styled(Input)((props: InputBorderType) => ({
   borderColor: Common.BORDER_COLOR(props),
 
   borderWidth: Common.BORDER_WIDTH(props),

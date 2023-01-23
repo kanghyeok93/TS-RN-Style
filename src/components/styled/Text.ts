@@ -20,7 +20,7 @@ export const MainText = styled.Text`
 interface TextType extends Margin, Padding, FontSize, FontWeight {
   width: number | string;
   height: number | string;
-  textAlign: string;
+  textAlign: TextAlign;
   lineHeight: number;
   textDecoration: number;
 }
@@ -57,7 +57,7 @@ export const Text = styled.Text((props: TextType) => ({
   paddingLeft: Common.PADDING_LEFT(props),
 
   // align
-  textAlign: (props.textAlign as TextAlign) || 'center',
+  textAlign: props.textAlign,
 
   // text Line
   textDecoration: props.textDecoration || 'none',

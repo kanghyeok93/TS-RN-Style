@@ -54,3 +54,20 @@ export type TextAlign =
   | 'right'
   | 'start'
   | undefined;
+
+export type AlignItems =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'stretch'
+  | 'baseline'
+  | undefined;
+
+export type JustifyContent =
+  | 'flex-start'
+  | 'flex-end'
+  | 'center'
+  | 'space-between'
+  | 'space-around'
+  | 'space-evenly'
+  | undefined;

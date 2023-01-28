@@ -22,7 +22,6 @@ interface TextType extends Margin, Padding, FontSize, FontWeight {
   height: number | string;
   textAlign: TextAlign;
   lineHeight: number;
-  textDecoration: number;
 }
 
 export const Text = styled.Text((props: TextType) => ({
@@ -58,9 +57,6 @@ export const Text = styled.Text((props: TextType) => ({
 
   // align
   textAlign: props.textAlign,
-
-  // text Line
-  textDecoration: props.textDecoration || 'none',
 
   // line Height
   lineHeight: props.lineHeight,

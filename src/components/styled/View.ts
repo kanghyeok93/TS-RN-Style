@@ -1,6 +1,11 @@
 import styled from 'styled-components/native';
 import {IContainerProps} from '../../interfaces/Styled.interface';
-import {Margin, Padding} from '../../types/Styled.type';
+import {
+  AlignItems,
+  JustifyContent,
+  Margin,
+  Padding,
+} from '../../types/Styled.type';
 import * as Common from './Common';
 
 export const Container = styled.View`
@@ -13,8 +18,8 @@ export const Container = styled.View`
 
 interface ViewType extends Margin, Padding {
   flex: number;
-  alignItems: string;
-  justifyContent: string;
+  alignItems: AlignItems;
+  justifyContent: JustifyContent;
   width: number | string;
   height: number | string;
   zIndex: number;

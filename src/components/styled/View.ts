@@ -27,9 +27,6 @@ interface ViewType extends Margin, Padding {
 
 export const View = styled.View((props: ViewType) => ({
   // flex
-  flex: props.flex,
-  alignItems: props.alignItems || 'stretch',
-  justifyContent: props.justifyContent || 'flex-start',
 
   // size
   width: props.width || 'auto',

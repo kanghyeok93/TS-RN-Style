@@ -11,20 +11,31 @@ import {
 } from './src/components/styled/View';
 
 interface Props {}
-//todo 기본적으로 제공해주는 스타일 속성이 있으므로 스타일 컴포넌트 타입 및 스타일 구조 수정필요
 const App = ({}: Props) => {
   return (
     <ThemeProvider theme={Theme}>
       <SafeAreaView bgLightPink alignItems={'center'} justifyContent={'center'}>
         <ViewRow>
-          <View bgInfo width={150} height={70} padding={10} marginRight={5}>
-            <Text ftWhite ftLarge bold>
+          <View
+            bgInfo
+            width={150}
+            height={70}
+            padding={10}
+            marginRight={5}
+            justifyContent={'center'}>
+            <Text ftWhite ftLarge bold textAlign={'center'}>
               Test
             </Text>
           </View>
 
-          <View bgTomato width={150} height={70} padding={10} marginLeft={5}>
-            <Text ftWhite ftLarge bold>
+          <View
+            bgTomato
+            width={150}
+            height={70}
+            padding={10}
+            marginLeft={5}
+            justifyContent={'center'}>
+            <Text ftWhite ftLarge bold textAlign={'center'}>
               Test
             </Text>
           </View>

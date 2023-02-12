@@ -24,7 +24,6 @@ interface TextType extends Margin, Padding, FontSize, FontWeight {
   lineHeight: number;
 }
 
-//todo Text 컴포넌트는 타입(d.ts) 파일에 있는 props 기본 속성이 안먹음.. 왜지..?
 export const Text = styled.Text((props: TextType) => ({
   // size
   width: props.width || 'auto',

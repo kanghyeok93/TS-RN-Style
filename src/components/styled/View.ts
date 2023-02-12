@@ -10,13 +10,14 @@ export const Container = styled.View`
     props.theme && props.theme.color.black};
 `;
 
-export const View = styled.View(props => ({
-  backgroundColor: Common.BACKGROUND_COLOR(props),
-}));
-
 export const SafeAreaView = styled.SafeAreaView(props => ({
   flex: 1,
   backgroundColor: Common.BACKGROUND_COLOR(props),
+}));
+
+export const View = styled.View(props => ({
+  backgroundColor: Common.BACKGROUND_COLOR(props),
+  borderColor: Common.BORDER_COLOR(props),
 }));
 
 export const ViewRow = styled(View)({

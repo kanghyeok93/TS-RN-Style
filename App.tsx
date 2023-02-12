@@ -43,10 +43,10 @@ const App = ({}: Props) => {
 
         <View
           borderRadius={15}
-          borderColor={'#FFFFFF'}
-          borderWidth={1}
+          borderWidth={5}
           padding={15}
-          marginTop={15}>
+          marginTop={15}
+          brRed>
           <Text>ViewBorder</Text>
         </View>
 

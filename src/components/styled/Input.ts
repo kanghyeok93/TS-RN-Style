@@ -21,7 +21,8 @@ interface InputBorderType extends BorderWidth, BorderRadius {
   borderColor: string;
 }
 
-export const Input = styled(TextInput)((props: InputType) => ({
+//todo textInput porps 값 재정의
+export const Input = styled(TextInput)((props: any) => ({
   // size
   width: props.width || '100%',
   height: props.height || 39,

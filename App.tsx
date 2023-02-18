@@ -1,6 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Input} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
 import Theme from './src/components/styled/theme/Theme';
 import {
@@ -49,6 +50,10 @@ const App = ({}: Props) => {
           brRed>
           <Text>ViewBorder</Text>
         </View>
+
+        {/* <Input value={'11'} ref={inputRef} /> */}
+
+        <Input />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>
           <Text ftLime>ViewAbsolute</Text>

@@ -1,5 +1,5 @@
 // src/App.tsx
-import React from 'react';
+import React, {useRef} from 'react';
 import {ThemeProvider} from 'styled-components';
 import {Input} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
@@ -13,6 +13,8 @@ import {
 
 interface Props {}
 const App = ({}: Props) => {
+  const inputRef = useRef();
+
   return (
     <ThemeProvider theme={Theme}>
       <SafeAreaView bgLightPink alignItems={'center'} justifyContent={'center'}>
@@ -50,8 +52,6 @@ const App = ({}: Props) => {
           brRed>
           <Text>ViewBorder</Text>
         </View>
-
-        {/* <Input value={'11'} ref={inputRef} /> */}
 
         <Input />
 

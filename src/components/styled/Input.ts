@@ -1,4 +1,4 @@
-import {TextInput} from 'react-native';
+import {TextInput, TextInputProps} from 'react-native';
 import styled from 'styled-components/native';
 import {
   BorderRadius,
@@ -11,18 +11,16 @@ import {
 } from '../../types/Styled.type';
 import * as Common from './Common';
 
-interface InputType extends Margin, Padding, FontSize, FontWeight {
-  width: number | string;
-  height: number | string;
-  textAlign: TextAlign;
+//todo optional 확인
+interface InputType extends TextInputProps {
+  height?: number | string;
 }
 
 interface InputBorderType extends BorderWidth, BorderRadius {
   borderColor: string;
 }
 
-//todo textInput porps 값 재정의
-export const Input = styled(TextInput)((props: any) => ({
+export const Input = styled(TextInput)((props: InputType) => ({
   // size
   width: props.width || '100%',
   height: props.height || 39,

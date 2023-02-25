@@ -7,13 +7,17 @@ import {
   FontWeight,
   Margin,
   Padding,
-  TextAlign,
 } from '../../types/Styled.type';
 import * as Common from './Common';
 
-//todo optional 확인
-interface InputType extends TextInputProps {
+interface InputType
+  extends TextInputProps,
+    Partial<FontSize>,
+    Partial<FontWeight>,
+    Partial<Margin>,
+    Partial<Padding> {
   height?: number | string;
+  width?: number | string;
 }
 
 interface InputBorderType extends BorderWidth, BorderRadius {
@@ -46,9 +50,6 @@ export const Input = styled(TextInput)((props: InputType) => ({
   paddingRight: Common.PADDING_RIGHT(props),
   paddingBottom: Common.PADDING_BOTTOM(props),
   paddingLeft: Common.PADDING_LEFT(props),
-
-  // align
-  textAlign: props.textAlign,
 }));
 
 export const InputBorder = styled(Input)((props: InputBorderType) => ({

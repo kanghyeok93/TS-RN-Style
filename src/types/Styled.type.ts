@@ -36,15 +36,15 @@ export type BorderRadius = {
 };
 
 export type FontSize = {
-  ftVerySmall: string;
-  ftSmall: string;
-  ftLarge: string;
-  ftBigLarge: string;
-  fontSize: string;
+  ftVerySmall?: string | undefined;
+  ftSmall?: string | undefined;
+  ftLarge?: string | undefined;
+  ftBigLarge?: string | undefined;
+  fontSize?: string | undefined;
 };
 
 export type FontWeight = {
-  bold: string;
+  bold?: string | undefined;
 };
 
 export type TextAlign =

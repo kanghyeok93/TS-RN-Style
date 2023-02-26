@@ -1,4 +1,4 @@
-import {TextInput, TextInputProps} from 'react-native';
+import {TextInputProps} from 'react-native';
 import styled from 'styled-components/native';
 import {
   BorderRadius,
@@ -24,7 +24,7 @@ interface InputBorderType extends BorderWidth, BorderRadius {
   borderColor: string;
 }
 
-export const Input = styled(TextInput)((props: InputType) => ({
+export const Input = styled.TextInput((props: InputType) => ({
   // size
   width: props.width || '100%',
   height: props.height || 39,
@@ -37,19 +37,19 @@ export const Input = styled(TextInput)((props: InputType) => ({
   backgroundColor: Common.BACKGROUND_COLOR(props),
   color: Common.FONT_COLOR(props),
 
-  // margin
-  margin: Common.MARGIN(props),
-  marginTop: Common.MARGIN_TOP(props),
-  marginRight: Common.MARGIN_RIGHT(props),
-  marginBottom: Common.MARGIN_BOTTOM(props),
-  marginLeft: Common.MARGIN_LEFT(props),
+  // // margin
+  // margin: Common.MARGIN(props),
+  // marginTop: Common.MARGIN_TOP(props),
+  // marginRight: Common.MARGIN_RIGHT(props),
+  // marginBottom: Common.MARGIN_BOTTOM(props),
+  // marginLeft: Common.MARGIN_LEFT(props),
 
-  // padding
-  padding: Common.PADDING(props),
-  paddingTop: Common.PADDING_TOP(props),
-  paddingRight: Common.PADDING_RIGHT(props),
-  paddingBottom: Common.PADDING_BOTTOM(props),
-  paddingLeft: Common.PADDING_LEFT(props),
+  // // padding
+  // padding: Common.PADDING(props),
+  // paddingTop: Common.PADDING_TOP(props),
+  // paddingRight: Common.PADDING_RIGHT(props),
+  // paddingBottom: Common.PADDING_BOTTOM(props),
+  // paddingLeft: Common.PADDING_LEFT(props),
 }));
 
 export const InputBorder = styled(Input)((props: InputBorderType) => ({

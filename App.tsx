@@ -51,10 +51,20 @@ const App = ({}: Props) => {
           <Text>ViewBorder</Text>
         </View>
 
-        <Input ftBigLarge />
+        {/* Todo Add paddingHorizontal, paddingVertical */}
+        <Input
+          ftBigLarge
+          ftInfo
+          bgSilver
+          marginTop={10}
+          paddingLeft={10}
+          paddingRight={10}
+        />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>
-          <Text ftLime>ViewAbsolute</Text>
+          <Text ftLime bold>
+            ViewAbsolute
+          </Text>
         </ViewAbsolute>
       </SafeAreaView>
     </ThemeProvider>

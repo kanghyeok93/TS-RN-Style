@@ -46,20 +46,13 @@ const App = ({}: Props) => {
           borderRadius={15}
           borderWidth={5}
           padding={15}
-          marginTop={15}
-          brRed>
+          brRed
+          marginVertical={15}>
           <Text>ViewBorder</Text>
         </View>
 
         {/* Todo Add paddingHorizontal, paddingVertical */}
-        <Input
-          ftBigLarge
-          ftInfo
-          bgSilver
-          marginTop={10}
-          paddingLeft={10}
-          paddingRight={10}
-        />
+        <Input ftBigLarge ftInfo bgSilver paddingLeft={10} paddingRight={10} />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>
           <Text ftLime bold>

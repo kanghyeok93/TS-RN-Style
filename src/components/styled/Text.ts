@@ -1,12 +1,6 @@
 import styled from 'styled-components/native';
 import {IContainerProps} from '../../interfaces/Styled.interface';
-import {
-  FontSize,
-  FontWeight,
-  Margin,
-  Padding,
-  TextAlign,
-} from '../../types/Styled.type';
+import {FontSize, FontWeight, TextAlign} from '../../types/Styled.type';
 import * as Common from './Common';
 
 export const MainText = styled.Text`
@@ -17,7 +11,7 @@ export const MainText = styled.Text`
   color: white;
 `;
 
-interface TextType extends Margin, Padding, FontSize, FontWeight {
+interface TextType extends FontSize, FontWeight {
   width: number | string;
   height: number | string;
   textAlign: TextAlign;
@@ -39,21 +33,6 @@ export const Text = styled.Text((props: TextType) => ({
 
   // color
   color: Common.FONT_COLOR(props),
-  backgroundColor: Common.BACKGROUND_COLOR(props),
-
-  // margin
-  margin: Common.MARGIN(props),
-  marginTop: Common.MARGIN_TOP(props),
-  marginRight: Common.MARGIN_RIGHT(props),
-  marginBottom: Common.MARGIN_BOTTOM(props),
-  marginLeft: Common.MARGIN_LEFT(props),
-
-  // padding
-  padding: Common.PADDING(props),
-  paddingTop: Common.PADDING_TOP(props),
-  paddingRight: Common.PADDING_RIGHT(props),
-  paddingBottom: Common.PADDING_BOTTOM(props),
-  paddingLeft: Common.PADDING_LEFT(props),
 
   // align
   textAlign: props.textAlign,

@@ -1,7 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import {Input} from './src/components/styled/Input';
+import {Input, InputBorder} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
 import Theme from './src/components/styled/theme/Theme';
 import {
@@ -51,8 +51,20 @@ const App = ({}: Props) => {
           <Text>ViewBorder</Text>
         </View>
 
-        {/* Todo Add paddingHorizontal, paddingVertical */}
-        <Input ftBigLarge ftInfo bgSilver paddingLeft={10} paddingRight={10} />
+        <View width={'100%'} paddingHorizontal={10}>
+          <Input ftBigLarge ftInfo bgSilver paddingHorizontal={15} />
+        </View>
+
+        <InputBorder
+          ftBigLarge
+          ftRed
+          bgOrange
+          paddingHorizontal={15}
+          marginTop={30}
+          borderWidth={5}
+          brRed
+          borderRadius={15}
+        />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>
           <Text ftLime bold>

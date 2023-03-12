@@ -8,8 +8,8 @@ import {
 import * as Common from './Common';
 
 interface InputType extends FontSize, FontWeight {
-  height?: number | string;
-  width?: number | string;
+  height: number | string;
+  width: number | string;
 }
 
 interface InputBorderType extends BorderWidth, BorderRadius {
@@ -33,15 +33,15 @@ export const Input = styled.TextInput((props: InputType) => ({
 export const InputBorder = styled(Input)((props: InputBorderType) => ({
   borderColor: Common.BORDER_COLOR(props),
 
-  borderWidth: Common.BORDER_WIDTH(props),
-  borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
-  borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
-  borderTopWidth: Common.BORDER_TOP_WIDTH(props),
-  borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+  // borderWidth: Common.BORDER_WIDTH(props),
+  // borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
+  // borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
+  // borderTopWidth: Common.BORDER_TOP_WIDTH(props),
+  // borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
 
-  borderRadius: Common.BORDER_RADIUS(props),
-  borderTopLeftRadius: Common.BORDER_TOP_LEFT_RADIUS(props),
-  borderTopRightRadius: Common.BORDER_TOP_RIGHT_RADIUS(props),
-  borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_RADIUS(props),
-  borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_RADIUS(props),
+  // borderRadius: Common.BORDER_RADIUS(props),
+  // borderTopLeftRadius: Common.BORDER_TOP_LEFT_RADIUS(props),
+  // borderTopRightRadius: Common.BORDER_TOP_RIGHT_RADIUS(props),
+  // borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_RADIUS(props),
+  // borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_RADIUS(props),
 }));

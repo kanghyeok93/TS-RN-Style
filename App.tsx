@@ -1,7 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
-import {Input, InputBorder} from './src/components/styled/Input';
+import {Input} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
 import Theme from './src/components/styled/theme/Theme';
 import {
@@ -55,15 +55,17 @@ const App = ({}: Props) => {
           <Input ftBigLarge ftInfo bgSilver paddingHorizontal={15} />
         </View>
 
-        <InputBorder
+        <Input
           ftBigLarge
           ftRed
           bgOrange
           paddingHorizontal={15}
           marginTop={30}
-          borderWidth={5}
+          borderWidth={3}
+          borderLeftWidth={15}
           brRed
-          borderRadius={15}
+          borderRadius={1}
+          borderTopRightRadius={15}
         />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>

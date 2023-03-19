@@ -1,6 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import {ThemeProvider} from 'styled-components';
+import {Image} from './src/components/styled/Image';
 import {Input} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
 import Theme from './src/components/styled/theme/Theme';
@@ -66,6 +67,14 @@ const App = ({}: Props) => {
           brRed
           borderRadius={1}
           borderTopRightRadius={15}
+        />
+
+        <Image
+          width={150}
+          height={150}
+          source={{
+            uri: 'https://fastly.picsum.photos/id/461/200/300.jpg?hmac=dIwmQxeVflRD0QrOZ_p0_q-LpAY7sVhua6FCEIR_xi8',
+          }}
         />
 
         <ViewAbsolute bgGray bottom={70} padding={30}>

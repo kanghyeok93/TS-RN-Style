@@ -72,6 +72,8 @@ const App = ({}: Props) => {
         <Image
           width={150}
           height={150}
+          resizeMode={'contain'}
+          margin={10}
           source={{
             uri: 'https://fastly.picsum.photos/id/461/200/300.jpg?hmac=dIwmQxeVflRD0QrOZ_p0_q-LpAY7sVhua6FCEIR_xi8',
           }}

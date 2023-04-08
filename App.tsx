@@ -69,15 +69,27 @@ const App = ({}: Props) => {
           borderTopRightRadius={15}
         />
 
-        <Image
-          width={150}
-          height={150}
-          resizeMode={'contain'}
-          margin={10}
-          source={{
-            uri: 'https://fastly.picsum.photos/id/461/200/300.jpg?hmac=dIwmQxeVflRD0QrOZ_p0_q-LpAY7sVhua6FCEIR_xi8',
-          }}
-        />
+        <ViewRow bgInfo justifyContent={'center'} width={'100%'} marginTop={15}>
+          <Image
+            width={150}
+            height={150}
+            resizeMode={'cover'}
+            margin={10}
+            source={{
+              uri: 'https://fastly.picsum.photos/id/461/200/300.jpg?hmac=dIwmQxeVflRD0QrOZ_p0_q-LpAY7sVhua6FCEIR_xi8',
+            }}
+          />
+
+          <Image
+            width={150}
+            height={150}
+            resizeMode={'contain'}
+            margin={10}
+            source={{
+              uri: 'https://fastly.picsum.photos/id/137/200/200.jpg?hmac=qhNK8PzcRQJaCJlGEj1q5ceRIkKkfPmVuOwE5ZInXA8',
+            }}
+          />
+        </ViewRow>
 
         <ViewAbsolute bgGray bottom={70} padding={30}>
           <Text ftLime bold>

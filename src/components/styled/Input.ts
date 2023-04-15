@@ -19,5 +19,4 @@ export const Input = styled.TextInput((props: InputType) => ({
   // color
   backgroundColor: Common.BACKGROUND_COLOR(props),
   color: Common.FONT_COLOR(props),
-  borderColor: Common.BORDER_COLOR(props),
 }));

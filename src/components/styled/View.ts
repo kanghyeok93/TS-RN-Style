@@ -17,7 +17,6 @@ export const SafeAreaView = styled.SafeAreaView(props => ({
 
 export const View = styled.View(props => ({
   backgroundColor: Common.BACKGROUND_COLOR(props),
-  borderColor: Common.BORDER_COLOR(props),
 }));
 
 export const ViewRow = styled(View)({

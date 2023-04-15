@@ -13,15 +13,12 @@ export const Image = styled.Image((props: ImageType) => ({
 }));
 
 export const ImageBorder = styled(Image)(props => ({
-  // borderColor: Common.BORDER_COLOR(props),
-  // borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
-  // borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
-  // borderTopWidth: Common.BORDER_TOP_WIDTH(props),
-  // borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
-  // borderTopLeftRadius: Common.BORDER_TOP_LEFT_WIDTH(props),
-  // borderTopRightRadius: Common.BORDER_TOP_RIGHT_WIDTH(props),
-  // borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_WIDTH(props),
-  // borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_WIDTH(props),
-  // borderWidth: props.borderWidth,
-  // borderRadius: props.borderRadius,
+  borderLeftWidth: Common.BORDER_LEFT_WIDTH(props),
+  borderRightWidth: Common.BORDER_RIGHT_WIDTH(props),
+  borderTopWidth: Common.BORDER_TOP_WIDTH(props),
+  borderBottomWidth: Common.BORDER_BOTTOM_WIDTH(props),
+  borderTopLeftRadius: Common.BORDER_TOP_LEFT_WIDTH(props),
+  borderTopRightRadius: Common.BORDER_TOP_RIGHT_WIDTH(props),
+  borderBottomLeftRadius: Common.BORDER_BOTTOM_LEFT_WIDTH(props),
+  borderBottomRightRadius: Common.BORDER_BOTTOM_RIGHT_WIDTH(props),
 }));

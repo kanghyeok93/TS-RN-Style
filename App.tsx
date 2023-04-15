@@ -85,6 +85,9 @@ const App = ({}: Props) => {
             height={150}
             resizeMode={'contain'}
             margin={10}
+            borderWidth={10}
+            borderRadius={999}
+            borderColor={'red'}
             source={{
               uri: 'https://fastly.picsum.photos/id/137/200/200.jpg?hmac=qhNK8PzcRQJaCJlGEj1q5ceRIkKkfPmVuOwE5ZInXA8',
             }}

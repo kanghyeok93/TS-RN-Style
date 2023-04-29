@@ -12,6 +12,7 @@ import {
   ViewRow,
 } from './src/components/styled/View';
 
+//todo br 세팅
 interface Props {}
 const App = ({}: Props) => {
   return (
@@ -47,7 +48,6 @@ const App = ({}: Props) => {
           borderRadius={15}
           borderWidth={5}
           padding={15}
-          brRed
           marginVertical={15}>
           <Text>ViewBorder</Text>
         </View>
@@ -64,7 +64,6 @@ const App = ({}: Props) => {
           marginTop={30}
           borderWidth={3}
           borderLeftWidth={15}
-          brRed
           borderRadius={1}
           borderTopRightRadius={15}
         />
@@ -75,6 +74,8 @@ const App = ({}: Props) => {
             height={150}
             resizeMode={'cover'}
             margin={10}
+            borderWidth={10}
+            borderColor={'tomato'}
             source={{
               uri: 'https://fastly.picsum.photos/id/461/200/300.jpg?hmac=dIwmQxeVflRD0QrOZ_p0_q-LpAY7sVhua6FCEIR_xi8',
             }}

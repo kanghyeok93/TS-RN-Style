@@ -4,13 +4,13 @@ import {ThemeProvider} from 'styled-components';
 import {Image} from './src/components/styled/Image';
 import {Input} from './src/components/styled/Input';
 import {Text} from './src/components/styled/Text';
-import Theme from './src/components/styled/theme/Theme';
 import {
   SafeAreaView,
   View,
   ViewAbsolute,
   ViewRow,
 } from './src/components/styled/View';
+import Theme from './src/components/styled/theme/Theme';
 
 //todo br 세팅
 interface Props {}
@@ -37,6 +37,8 @@ const App = ({}: Props) => {
             height={70}
             padding={10}
             marginLeft={5}
+            borderWidth={10}
+            borderColor={'sienna'}
             justifyContent={'center'}>
             <Text ftWhite ftLarge bold textAlign={'center'}>
               Test
@@ -60,6 +62,7 @@ const App = ({}: Props) => {
           ftBigLarge
           ftRed
           bgOrange
+          borderColor={'mistyrose'}
           paddingHorizontal={15}
           marginTop={30}
           borderWidth={3}
